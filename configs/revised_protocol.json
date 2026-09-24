@@ -1,0 +1,27 @@
+{
+  "protocol": "lecardv2_train512_dev128_heldout_test160",
+  "epochs": 10,
+  "split_seed": 20260919,
+  "seeds": [42, 123, 2026],
+  "official_source_sha256": {
+    "train640": "ea4d19468c02bcde0f3c4275de30aa655582854bd826e8ff4dd781bfc62cc801",
+    "test160": "fc660ce7af6ffd17635cb51c084a559c0391fcd53278bdf2b4a138baeb7ebbcb"
+  },
+  "query_counts": {"train512": 512, "dev128": 128, "test160": 160},
+  "test160_judged_pairs": 4795,
+  "selection_split": "dev128",
+  "selection_metric": "MAP",
+  "selection_tie_rule": "earliest_step",
+  "checkpoint_steps": {
+    "cecra": [13, 26, 39, 52, 65, 78],
+    "sailer_ft": [13, 26, 39, 52, 65, 78],
+    "keller": [23, 46, 69, 92, 115, 138]
+  },
+  "candidate_pool": "dataset_judged_pairs_only",
+  "score_tie_rule": "score_desc_then_doc_id_desc",
+  "positive_rule": "label_3_if_present_else_labels_2_and_3",
+  "no_positive_AP": 0.0,
+  "ndcg_gain": {"0": 0.0, "1": 1.0, "2": 2.0, "3": 4.0},
+  "reported_metrics": ["MAP", "MRR", "P@1", "P@3", "NDCG@3", "NDCG@5", "NDCG@10"],
+  "test_selection_forbidden": true
+}
