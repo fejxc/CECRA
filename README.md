@@ -2,7 +2,9 @@
 
 This repository contains the evaluation and configuration code released before acceptance of the CECRA manuscript. It is separate from the full CECRA research repository; publishing this subset does not release the model implementation, case texts, weights, or experiment artifacts.
 
-Included: a seven-metric evaluator for already generated scores, an ID-only deterministic split utility, a six-point `dev128` checkpoint selector, a redacted protocol configuration, and synthetic unit tests. Not included: case texts, query IDs, qrels, prediction scores, generated evidence caches, model code or weights, checkpoints, reviewer material, or results. Users must obtain datasets under their own applicable terms.
+Included: a seven-metric evaluator for already generated scores, an ID-only deterministic split utility, a six-point `dev128` checkpoint selector, a redacted protocol configuration, synthetic unit tests, and a cryptographic fingerprint record for the local Qwen3-32B-AWQ snapshot used for offline evidence construction. Not included: case texts, query IDs, qrels, prediction scores, generated evidence caches, model code or weights, checkpoints, reviewer material, or results. Users must obtain datasets under their own applicable terms.
+
+The exact upstream commit of the local Qwen snapshot was not retained. The model identifier, recorded revision string, local file SHA-256 fingerprints, prompt hashes, and generation settings are therefore reported in [`reproducibility/QWEN3_32B_AWQ_LOCAL_SNAPSHOT.md`](reproducibility/QWEN3_32B_AWQ_LOCAL_SNAPSHOT.md). These fingerprints identify the files used in this study without redistributing them.
 
 ## Evaluation contract
 
