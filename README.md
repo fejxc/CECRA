@@ -3,7 +3,7 @@
 English | [简体中文](README.zh-CN.md)
 
 This repository contains a **limited evaluation and configuration companion**
-for the accepted CECRA manuscript. It is separate from the full CECRA
+for the published CECRA paper. It is separate from the full CECRA
 research repository and does not release the neural model implementation,
 case texts, query IDs, qrels, prediction scores, evidence caches, weights,
 checkpoints, reviewer material, or underlying experiment result files.
@@ -31,14 +31,16 @@ The exact upstream commit of the local Qwen snapshot was not retained. The model
 | [tests/test_release.py](tests/test_release.py) | Synthetic tests; contains no case text, qrels, predictions, or private IDs. |
 | [reproducibility/QWEN3_32B_AWQ_LOCAL_SNAPSHOT.md](reproducibility/QWEN3_32B_AWQ_LOCAL_SNAPSHOT.md) | Local model and prompt fingerprints plus the measured cost-audit scope. |
 
-## Accepted paper
+## Published paper
 
 | Field | Information |
 |---|---|
 | Title | CECRA: Structured Evidence-Aware Reranking for Long-Document Legal Case Retrieval |
 | Authors | Hanjie Ma and Yun Sun |
-| Journal | Applied Sciences |
-| Status | Accepted; publisher-assigned DOI and final citation metadata are not recorded in this release yet |
+| Journal | Applied Sciences, 2026, 16(20), 10037 |
+| Status | Published 10 October 2026 |
+| DOI | [10.3390/app162010037](https://doi.org/10.3390/app162010037) |
+| Version of Record | [MDPI article](https://www.mdpi.com/2076-3417/16/20/10037) |
 
 CECRA combines a global Summary representation with local Fact Evidence and
 Reasoning Evidence. The local views use five fact slots and four reasoning
@@ -91,9 +93,6 @@ does not isolate Agreement's independent effect.
   Later internal multi-checkpoint test diagnostics are excluded from the
   confirmatory main results and are not used to select the reported checkpoint.
 
-The article's publication record should be updated with the publisher's final
-DOI, volume, issue, article number or pages, and Version of Record link when
-those details are assigned.
 
 ## Evaluation contract
 
@@ -164,11 +163,8 @@ separate.
 
 ## Citation
 
-Until the publisher assigns final metadata, cite the accepted manuscript as:
+Cite the published article as:
 
-> Ma, Hanjie, and Yun Sun. “CECRA: Structured Evidence-Aware Reranking for
-> Long-Document Legal Case Retrieval.” *Applied Sciences*. Accepted
-> manuscript.
-
-Replace this provisional citation with the final publisher citation and DOI
-when available.
+> Ma, H.; Sun, Y. CECRA: Structured Evidence-Aware Reranking for Long-Document
+> Legal Case Retrieval. *Applied Sciences* 2026, *16*(20), 10037.
+> [https://doi.org/10.3390/app162010037](https://doi.org/10.3390/app162010037)
