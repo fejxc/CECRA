@@ -2,7 +2,7 @@
 
 [English](README.md) | 简体中文
 
-本仓库是 CECRA 录用论文配套的**有限评测与配置材料**。它独立于完整
+本仓库是 CECRA 已发表论文配套的**有限评测与配置材料**。它独立于完整
 CECRA 研究仓库，不公开神经模型实现、案件文本、查询 ID、qrels、
 预测分数、证据缓存、模型权重、checkpoint、审稿材料或实验逐条结果文件。
 
@@ -28,14 +28,16 @@ revision 字符串、本地文件 SHA-256、prompt 哈希和生成参数记录�
 | [tests/test_release.py](tests/test_release.py) | 合成数据测试；不含案件文本、qrels、预测或私有 ID。 |
 | [reproducibility/QWEN3_32B_AWQ_LOCAL_SNAPSHOT.md](reproducibility/QWEN3_32B_AWQ_LOCAL_SNAPSHOT.md) | 本地模型与 prompt 指纹，以及独立成本审计的范围。 |
 
-## 录用论文
+## 已发表论文
 
 | 项目 | 信息 |
 |---|---|
 | 题目 | CECRA: Structured Evidence-Aware Reranking for Long-Document Legal Case Retrieval |
 | 作者 | Hanjie Ma、Yun Sun |
-| 期刊 | Applied Sciences |
-| 状态 | 已录用；本发布包尚未记录出版社分配的 DOI 和最终引文信息 |
+| 期刊 | Applied Sciences, 2026, 16(20), 10037 |
+| 状态 | 已于 2026 年 10 月 10 日发表 |
+| DOI | [10.3390/app162010037](https://doi.org/10.3390/app162010037) |
+| 正式发表版本 | [MDPI 文章页面](https://www.mdpi.com/2076-3417/16/20/10037) |
 
 CECRA 将全局 Summary 表示与局部 Fact Evidence、Reasoning Evidence
 结合；局部视图包含 5 个事实槽位和 4 个推理步骤，并通过有效性掩码和
@@ -78,8 +80,6 @@ dev128 选择 checkpoint；test160 不用于训练、调参或 checkpoint 选择
 - 论文另行报告了预先规定的固定 epoch 敏感性分析。后续内部多 checkpoint
   test 诊断不属于确认性主结果，也未用于选择论文报告的 checkpoint。
 
-出版社确定最终信息后，应补充 DOI、卷期、文章编号或页码，以及 Version
-of Record 链接。
 
 ## 划分来源与哈希
 
@@ -117,10 +117,8 @@ LeCaRD 和 LeCaRDv2 数据应从[上游仓库](https://github.com/myx666/LeCaRD)
 
 ## 引用
 
-出版社分配最终信息之前，可暂按以下格式引用录用稿：
+正式引文如下：
 
-> Ma, Hanjie, and Yun Sun. “CECRA: Structured Evidence-Aware Reranking for
-> Long-Document Legal Case Retrieval.” *Applied Sciences*. Accepted
-> manuscript.
-
-获得最终出版信息后，请替换为正式引文和 DOI。
+> Ma, H.; Sun, Y. CECRA: Structured Evidence-Aware Reranking for Long-Document
+> Legal Case Retrieval. *Applied Sciences* 2026, *16*(20), 10037.
+> [https://doi.org/10.3390/app162010037](https://doi.org/10.3390/app162010037)
